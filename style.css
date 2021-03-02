@@ -1,0 +1,50 @@
+/*Global Style*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 52.5%;
+  --header1: 2.5rem;
+  --header2: 4rem;
+  --header3: 2.5rem;
+  --header4: 2rem;
+  --text: 2.5rem;
+  --backgound-color: #154353;
+  --gray-text: #2c2c2c;
+  --gradient1: #38d39f;
+  --gradient2: #38a4d3;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  font-size: var(--header1);
+}
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: var(--text);
+}
+h2 {
+  font-size: var(--header2);
+}
+h3 {
+  font-size: var(--header3);
+}
+h4,
+h5 {
+  font-size: var(--header4);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--gray-text);
+}
