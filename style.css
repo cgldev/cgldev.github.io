@@ -48,6 +48,13 @@ a {
   text-decoration: none;
   color: var(--gray-text);
 }
+.active {
+  background: var(--gray-text);
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+}
+/*Header Styles*/
 .main-head {
   width: 95%;
   margin: 0 0 0 auto;
@@ -78,4 +85,35 @@ nav ul {
 }
 nav .logo h1 {
   margin: 2rem;
+}
+/*Intro Styles*/
+.intro {
+  min-height: 90vh;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.intro h2 {
+  font-size: 5rem;
+  padding-top: 2rem;
+}
+.intro p {
+  padding-top: 2rem;
+  color: var(--gray-text);
+}
+.intro #name {
+  background: linear-gradient(to right, var(--gradient1), var(--gradient2));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.intro-social {
+  margin-top: 4rem;
+}
+.intro-social a {
+  margin-right: 4rem;
 }
