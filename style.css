@@ -107,6 +107,7 @@ nav .logo h1 {
 }
 .intro #name {
   background: linear-gradient(to right, var(--gradient1), var(--gradient2));
+  -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -116,4 +117,45 @@ nav .logo h1 {
 }
 .intro-social a {
   margin-right: 4rem;
+}
+/*Media Queries*/
+@media screen and (max-width: 1332px) {
+  html {
+    font-size: 53%;
+  }
+  nav {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 754px) {
+  html {
+    font-size: 45%;
+  }
+  .main-head {
+    width: 100%;
+  }
+  nav .logo {
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 1 60rem;
+  }
+  nav ul {
+    flex: 1 1 60rem;
+    margin: 2rem 0rem;
+  }
+  .intro-text {
+    margin-top: 5rem;
+    text-align: center;
+  }
+  .intro-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .intro-social a {
+    margin: 2rem;
+  }
 }
