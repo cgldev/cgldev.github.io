@@ -86,20 +86,16 @@ nav ul {
 nav .logo h1 {
   margin: 2rem;
 }
-/*Intro Styles*/
+/*Intro Section Styles*/
 .intro {
   min-height: 90vh;
   width: 90%;
   margin: auto;
-  flex-wrap: wrap;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
 }
 .intro h2 {
   font-size: 5rem;
-  padding-top: 2rem;
 }
 .intro p {
   padding-top: 2rem;
@@ -118,13 +114,130 @@ nav .logo h1 {
 .intro-social a {
   margin-right: 4rem;
 }
-/*Media Queries*/
+.scrollDownContainer {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  cursor: default;
+}
+.mouseIcon {
+  position: relative;
+  width: 30px;
+  height: 50px;
+  display: block;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  cursor: default;
+}
+.mouseIconWheel {
+  position: absolute;
+  top: 10px;
+  left: calc(50% - 4px);
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 4px;
+  animation: wheelScroll 3s ease infinite;
+  opacity: 1;
+}
+.scrollDownContainer p {
+  font-family: Roboto-Regular, sans-serif;
+  font-size: 16px;
+  line-height: 34px;
+  letter-spacing: 0;
+  color: black;
+}
+/*Projects Section Styles*/
+.projects {
+  width: 90%;
+  min-height: 90vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  /*align-items: center;*/
+  flex-direction: row;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.projects h2 {
+  margin: 5rem;
+}
+.project-card {
+  flex: 1 1 50rem;
+  cursor: pointer;
+  position: relative;
+}
+.project-card img {
+  width: 100%;
+  height: 100%;
+}
+.fade::after {
+  content: "Sitio web realizado con HTML y CSS.";
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  background: black;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.fade:hover::after {
+  opacity: 0.5;
+}
+/*Footer Styles*/
+footer {
+  background: var(--gray-text);
+  color: white;
+  min-height: 10vh;
+  padding: 0% 5%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+footer ul {
+  flex: 1 1 40rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+footer h4 {
+  flex: 1 1 40rem;
+}
+/*ANIMATIONS*/
+@keyframes wheelScroll {
+  0% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*Me1dia Queries*/
 @media screen and (max-width: 1332px) {
   html {
     font-size: 53%;
   }
   nav {
     width: 100%;
+  }
+  .scrollDownContainer {
+    display: none;
   }
 }
 @media screen and (max-width: 754px) {
@@ -149,6 +262,9 @@ nav .logo h1 {
     margin-top: 2rem;
     text-align: center;
   }
+  .intro-text h2 {
+    padding-top: 2rem;
+  }
   .intro-social {
     display: flex;
     justify-content: center;
@@ -157,5 +273,12 @@ nav .logo h1 {
   }
   .intro-social a {
     margin: 2rem;
+  }
+  .project-card {
+    flex: 1 1 50rem;
+  }
+  .project-card img {
+    width: 100%;
+    height: 100%;
   }
 }
