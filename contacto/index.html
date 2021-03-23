@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/icons/web-development.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Soy desarrollador front end apasionado por HTML y CSS"
+    />
+    <meta name="robots" content="index,follow" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <title>CesarMDQ | Contacto</title>
+  </head>
+  <body>
+    <header class="main-head">
+      <nav>
+        <div class="logo">
+          <img src="/icons/code.svg" alt="logo" />
+          <h1>CesarMDQ</h1>
+        </div>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="/">Sobre &eacute;ste sitio</a></li>
+          <li><a href="index.html" class="active">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="form-section">
+        <form
+          action="https://formsubmit.co/cesargimenezlascano@gmail.com"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="_next"
+            value="https://cesarmdq.github.io/gracias"
+          />
+          <input
+            type="hidden"
+            name="_subject"
+            value="Nuevo mensaje desde sitio web"
+          />
+          <label for="name">Nombre:</label>
+          <input type="text" name="name" id="name" required />
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required />
+          <label for="message">Mensaje</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <h4>CesarMDQ &copy; 2021</h4>
+      <ul>
+        <li>
+          <a href="https://github.com/cesarmdq/" target="_blank"
+            ><img src="/icons/github-footer.svg" alt="github-social-link"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/cesarmdq/" target="_blank"
+            ><img src="/icons/linked-in-footer.svg" alt="linkedin-social-link"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="mailto:cesargimenezlascano@gmail.com?subject=Mensaje desde cesarmdq.github.io"
+            ><img src="/icons/gmail-footer.svg" alt="gmail-social-link"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
