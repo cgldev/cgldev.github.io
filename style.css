@@ -221,24 +221,20 @@ nav .logo h1 {
 .form-section form textarea {
   margin: 2rem;
 }
-
 .form-section form input:focus,
 .form-section form textarea:focus {
   outline: 2px solid black;
 }
-
 .form-section form textarea {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
 }
-
 .form-section form button {
   width: 100%;
   padding: 2rem;
   background: #154353;
   color: white;
 }
-
 .form-section form button:focus {
   background: #33696b;
 }
@@ -252,6 +248,7 @@ nav .logo h1 {
   flex-direction: row;
   margin-top: 3rem;
 }
+
 /*FOOTER*/
 footer {
   background: var(--gray-text);
