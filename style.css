@@ -93,6 +93,7 @@ nav .logo h1 {
 .intro {
   min-height: 90vh;
   width: 90%;
+  max-width: 1200px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -159,12 +160,12 @@ nav .logo h1 {
 /*PROJECTS*/
 .projects {
   width: 90%;
+  max-width: 1200px;
   min-height: 90vh;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row;
   text-align: center;
   flex-wrap: wrap;
   gap: 5px;
