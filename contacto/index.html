@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Soy desarrollador front end apasionado por HTML y CSS"
+      content="Soy desarrollador web end apasionado por HTML y CSS. Creo animaciones CSS y SVG."
     />
     <meta name="robots" content="index,follow" />
     <link
@@ -18,64 +18,73 @@
     <title>CesarMDQ | Contacto</title>
   </head>
   <body>
-    <header class="main-head">
-      <nav>
-        <div class="logo">
-          <img src="/icons/code.svg" alt="logo" />
-          <h1>CesarMDQ</h1>
-        </div>
+    <div class="container">
+      <header class="main-head">
+        <nav>
+          <div class="logo">
+            <img src="/icons/code.svg" alt="logo" />
+            <h1>CesarMDQ</h1>
+          </div>
+          <ul>
+            <li><a href="../">Home</a></li>
+            <li><a href="/">Sobre &eacute;ste sitio</a></li>
+            <li><a href="index.html" class="active">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="form-section">
+          <form
+            action="https://formsubmit.co/bb7d4f6e55174b51f052da6eae236593"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_next"
+              value="https://cesarmdq.github.io/gracias"
+            />
+            <input
+              type="hidden"
+              name="_subject"
+              value="Nuevo mensaje desde sitio web"
+            />
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" id="name" required />
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required />
+            <label for="message">Mensaje</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+      </main>
+      <footer>
+        <h4>CesarMDQ &copy; 2021</h4>
         <ul>
-          <li><a href="../">Home</a></li>
-          <li><a href="/">Sobre &eacute;ste sitio</a></li>
-          <li><a href="index.html" class="active">Contacto</a></li>
+          <li>
+            <a href="https://github.com/cesarmdq/" target="_blank"
+              ><img src="/icons/github-footer.svg" alt="github-social-link"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/cesarmdq/" target="_blank"
+              ><img
+                src="/icons/linked-in-footer.svg"
+                alt="linkedin-social-link"
+            /></a>
+          </li>
+          <li>
+            <a href="/contacto/"
+              ><img src="/icons/gmail-footer.svg" alt="gmail-social-link"
+            /></a>
+          </li>
         </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="form-section">
-        <form
-          action="https://formsubmit.co/bb7d4f6e55174b51f052da6eae236593"
-          method="POST"
-        >
-          <input
-            type="hidden"
-            name="_next"
-            value="https://cesarmdq.github.io/gracias"
-          />
-          <input
-            type="hidden"
-            name="_subject"
-            value="Nuevo mensaje desde sitio web"
-          />
-          <label for="name">Nombre:</label>
-          <input type="text" name="name" id="name" required />
-          <label for="email">Email:</label>
-          <input type="email" name="email" id="email" required />
-          <label for="message">Mensaje</label>
-          <textarea name="message" id="message" cols="30" rows="10"></textarea>
-          <button type="submit">Enviar</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <h4>CesarMDQ &copy; 2021</h4>
-      <ul>
-        <li>
-          <a href="https://github.com/cesarmdq/" target="_blank"
-            ><img src="/icons/github-footer.svg" alt="github-social-link"
-          /></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/cesarmdq/" target="_blank"
-            ><img src="/icons/linked-in-footer.svg" alt="linkedin-social-link"
-          /></a>
-        </li>
-        <li>
-          <a href="/contacto/"
-            ><img src="/icons/gmail-footer.svg" alt="gmail-social-link"
-          /></a>
-        </li>
-      </ul>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

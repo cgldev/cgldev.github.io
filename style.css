@@ -54,7 +54,11 @@ a {
   padding: 1rem 3rem;
   border-radius: 2rem;
 }
-
+/*CONTAINER*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 /*HEADER*/
 .main-head {
   width: 95%;
@@ -91,9 +95,8 @@ nav .logo h1 {
 
 /*INTRO*/
 .intro {
-  min-height: 90vh;
+  min-height: 70vh;
   width: 90%;
-  max-width: 1200px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -118,49 +121,10 @@ nav .logo h1 {
 .intro-social a {
   margin-right: 4rem;
 }
-.scrollDownContainer {
-  position: absolute;
-  bottom: 25px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  cursor: default;
-}
-.mouseIcon {
-  position: relative;
-  width: 30px;
-  height: 50px;
-  display: block;
-  border: 2px solid black;
-  border-radius: 15px;
-  margin-bottom: 10px;
-  cursor: default;
-}
-.mouseIconWheel {
-  position: absolute;
-  top: 10px;
-  left: calc(50% - 4px);
-  width: 8px;
-  height: 8px;
-  background-color: black;
-  border-radius: 4px;
-  animation: wheelScroll 3s ease infinite;
-  opacity: 1;
-}
-.scrollDownContainer p {
-  font-family: Roboto-Regular, sans-serif;
-  font-size: 16px;
-  line-height: 34px;
-  letter-spacing: 0;
-  color: black;
-}
 
 /*PROJECTS*/
 .projects {
   width: 90%;
-  max-width: 1200px;
   min-height: 90vh;
   margin: auto;
   display: flex;
@@ -198,7 +162,7 @@ nav .logo h1 {
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transition: opacity 0.25s;
+  transition: opacity 1s;
 }
 .detail-wrap:hover {
   opacity: 1;
