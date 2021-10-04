@@ -134,7 +134,7 @@ nav .logo h1 {
   flex-wrap: wrap;
   gap: 5px;
 }
-.projects h2 {
+.projects h3 {
   margin: 5rem;
 }
 .project-card {
