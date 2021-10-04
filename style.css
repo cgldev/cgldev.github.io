@@ -7,8 +7,8 @@
 
 html {
   font-size: 52.5%;
-  --header1: 2.5rem;
-  --header2: 4rem;
+  --header1: 5rem;
+  --header2: 2.5rem;
   --header3: 2.5rem;
   --header4: 2rem;
   --text: 2.5rem;
@@ -89,7 +89,7 @@ nav ul {
   align-items: center;
   flex: 1 1 40rem;
 }
-nav .logo h1 {
+nav .logo h2 {
   margin: 2rem;
 }
 
@@ -100,9 +100,6 @@ nav .logo h1 {
   margin: auto;
   display: flex;
   align-items: center;
-}
-.intro h2 {
-  font-size: 5rem;
 }
 .intro p {
   padding-top: 2rem;
