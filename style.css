@@ -209,6 +209,10 @@ nav .logo h2 {
   background: #33696b;
 }
 
+form button {
+  cursor: pointer;
+}
+
 /*GRACIAS*/
 .thanks {
   min-height: 80vh;
